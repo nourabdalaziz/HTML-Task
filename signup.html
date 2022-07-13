@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" author content="Nour Abd Al-Aziz">
+    <meta name="description" content="Signup form front for an online shop">
+
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><img src="logo.png" alt="cup of coffee logo" height="45px" width="40px"></li>
+                <li><a href=" #">Home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <form action="https://formspree.io/ " enctype="application/x-www-form-urlencoded" method="post">
+            <h1>SIGN UP</h1>
+
+            <p>
+                <label for="fullname"> Full Name </label>
+                <input type="text" id="fullname" name="fullname" value="" required minlength="10" maxlength="100"
+                    placeholder="Nour Abd Al-Aziz" onfocus="this.placeholder=''"
+                    onfocusout="this.placeholder='Nour Abd Al-Aziz'">
+            </p>
+
+            <p>
+                <label for="email"> Email</label>
+                <input type="email" id="email" name="email" value="" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com"
+                    onfocus="this.placeholder=''" onfocusout="this.placeholder='example@example.com'">
+            </p>
+
+            <p>
+                <label for="pass"> Password </label>
+                <input type="password" id="pass" name="password" value="" required pattern=".{8,}"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                    onfocus="this.placeholder=''"
+                    onfocusout="this.placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'">
+            </p>
+
+            <p>
+                <label for="phone"> Phone Number</label>
+                <input type="tel" id="phone" name="phonenum" value="" required pattern="[0-9]{4}[-][0-9]{3}[-][0-9]{3}"
+                    placeholder="0599-123 456" onfocus="this.placeholder=''"
+                    onfocusout="this.placeholder='0599-123 456'">
+            </p>
+
+            <p>
+                <label for="bdate"> Date of Birth </label>
+                <input type="date" id="bdate" name="birthdate" value="">
+            </p>
+
+            <p>
+                <label for="country">Country </label>
+                <select name="country" id="country">
+                    <option value="Algeria">Algeria</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Palestine">Palestine</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="SaudiArabia">Saudi Arabia</option>Algeria</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="UnitedArabEmirates">United Arab Emirates</option>
+                    <option value="Yemen">Yemen</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Plan </label>
+                <label> <input type="radio" name="plan" value="free" required>Free</label>
+                <label> <input type="radio" name="plan" value="pro">Pro</label>
+            </p>
+
+            <p>
+                <label> <input type="checkbox" name="agreeOrnot" required value="">I agree to terms and
+                    conditions</label>
+            </p>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+    </main>
+</body>
+
+</html>
