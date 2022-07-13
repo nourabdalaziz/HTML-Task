@@ -204,7 +204,3 @@ input:focus:invalid {
     border-width: 2px;
 }
 
-span {
-    color: firebrick;
-    font-size: 15px;
-}
