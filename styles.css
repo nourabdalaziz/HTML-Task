@@ -1,6 +1,6 @@
 body {
     margin-top: 0px;
-    background-image: url('/bg.PNG');
+    background-image: url("bg.PNG");
 }
 
 header>nav {
@@ -203,4 +203,3 @@ input:focus:invalid {
     border-color: red;
     border-width: 2px;
 }
-
