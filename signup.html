@@ -35,14 +35,14 @@
                 <label for="fullname"> Full Name </label>
                 <input type="text" id="fullname" name="fullname" value="" required minlength="10" maxlength="100"
                     placeholder="Nour Abd Al-Aziz" onfocus="this.placeholder=''"
-                    onfocusout="this.placeholder='Nour Abd Al-Aziz'">
+                    onfocusout="this.placeholder='Nour Abd Al-Aziz'" tabindex="1">
             </p>
 
             <p>
                 <label for="email"> Email</label>
                 <input type="email" id="email" name="email" value="" required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@example.com"
-                    onfocus="this.placeholder=''" onfocusout="this.placeholder='example@example.com'">
+                    onfocus="this.placeholder=''" onfocusout="this.placeholder='example@example.com'" tabindex="2">
             </p>
 
             <p>
@@ -50,24 +50,25 @@
                 <input type="password" id="pass" name="password" value="" required pattern=".{8,}"
                     placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
                     onfocus="this.placeholder=''"
-                    onfocusout="this.placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'">
+                    onfocusout="this.placeholder='&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;'"
+                    tabindex="3">
             </p>
 
             <p>
                 <label for="phone"> Phone Number</label>
                 <input type="tel" id="phone" name="phonenum" value="" required pattern="[0-9]{4}[-][0-9]{3}[-][0-9]{3}"
                     placeholder="0599-123 456" onfocus="this.placeholder=''"
-                    onfocusout="this.placeholder='0599-123 456'">
+                    onfocusout="this.placeholder='0599-123 456'" tabindex="4">
             </p>
 
             <p>
                 <label for="bdate"> Date of Birth </label>
-                <input type="date" id="bdate" name="birthdate" value="">
+                <input type="date" id="bdate" name="birthdate" value="" tabindex="5">
             </p>
 
             <p>
                 <label for="country">Country </label>
-                <select name="country" id="country">
+                <select name="country" id="country" tabindex="6">
                     <option value="Algeria">Algeria</option>
                     <option value="Bahrain">Bahrain</option>
                     <option value="Egypt">Egypt</option>
@@ -87,16 +88,16 @@
 
             <p>
                 <label>Plan </label>
-                <label> <input type="radio" name="plan" value="free" required>Free</label>
+                <label> <input type="radio" name="plan" value="free" required tabindex="7">Free</label>
                 <label> <input type="radio" name="plan" value="pro">Pro</label>
             </p>
 
             <p>
-                <label> <input type="checkbox" name="agreeOrnot" required value="">I agree to terms and
+                <label> <input type="checkbox" name="agreeOrnot" required value="" tabindex="8">I agree to terms and
                     conditions</label>
             </p>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" tabindex="9">
 
         </form>
 
