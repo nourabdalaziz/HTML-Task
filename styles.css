@@ -203,3 +203,7 @@ input:focus:invalid {
     border-color: red;
     border-width: 2px;
 }
+
+div {
+    margin-top: 12px;
+}
